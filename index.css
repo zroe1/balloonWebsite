@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+* {font-family: 'Bebas Neue','Luckiest Guy', cursive;}
+body {
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+/* h1 {
+    text-align: center;
+    margin: 5px;
+} */
+p {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    font-size: 17px;
+    margin: 5px;
+}
+.center-text {
+    width: 550px;
+    /* height: 300px; */
+}
+h1 {
+  text-align: center;
+    margin: 5px;
+    /* position: absolute; */
+    /* left: 0px; */
+    /* background-color: rgb(250, 200, 200); */
+    font-size: 80px;
+    background-image: linear-gradient(90deg, red, orange, rgb(239, 211, 0), green, blue, purple);
+    /* text-shadow: 5px 5px 5px black; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+}
+.red {
+    position: absolute;
+    top: 3vw;
+    left: 5vw;
+    background-color: red;
+}
+.red::before {
+    border-bottom: 20px solid red;
+}
+.purple::before {
+    border-bottom: 20px solid purple;
+}
+.orange::before {
+    border-bottom: 20px solid orange;
+}
+.orange {
+    position: absolute;
+    top: 21vw;
+    left: 15vw;
+    background-color: orange;
+}
+.yellow::before {
+    border-bottom: 20px solid rgb(241, 241, 17);
+}
+.yellow {
+    position: absolute;
+    top: 8vw;
+    left: 25vw;
+    background-color: rgb(241, 241, 17);
+}
+/* rgb(241, 241, 17) */
+.green::before {
+    border-bottom: 20px solid rgb(0, 195, 0);
+}
+.green {
+    position: absolute;
+    top: 8vw;
+    right: 25vw;
+    background-color: rgb(0, 195, 0);
+}
+.blue::before {
+    border-bottom: 20px solid blue;
+}
+.blue {
+    position: absolute;
+    top: 25vw;
+    right: 13vw;
+    background-color: blue;
+}
+.purple {
+  position: absolute;
+  top: 4vw;
+  right: 5vw;
+  background-color: purple;
+}
+.balloon {
+    width: 100px;
+    height: 130px;
+    border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 100;
+  }
+  .balloon::before {
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+      
+    
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .balloon::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+
+  svg {
+    display: block;
+    /* width: inherit; */
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+  }
+  
+  path {
+    fill: none;
+    stroke: #000;
+    stroke-width: 0.5px;
+    width: 500px;
+    z-index: -1;
+  }
+  .string-container {
+    transform: rotate(0.25turn);
+  }
+  .string {
+    position: relative;
+    left: 40px;
+    top: 15px;
+    width: 500px;
+  }
+
+@media only screen and (max-width: 1250px) {
+  .balloon {
+    transform: scale(.7,.7);
+    /* background-color: red; */
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .balloon {
+    transform: scale(.5,.5);
+  }
+}
+.arrow-container {
+  position: absolute;
+  bottom: 20px;
+  width: 150px;
+  /* height: 250px; */
+  /* transform: scale(0.8, 0.8); */
+  /* background-color: green; */
+}
+
+.arrow-text {
+  /* width: 18vh; */
+  text-align: center;
+  /* background-color: orange; */
+  font-size: 15px;
+  margin: 0px;
+  padding-bottom: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+.arrow-top {
+  position: absolute;
+  width: 3vh;
+  height: 10vh;
+  top: 5vh;
+  left: 7.5vh;
+  background-color: black;
+}
+
+.arrow-bottom {
+  position: absolute;
+  top: 14vh;
+  left: 5vh;
+
+  width: 0; 
+  height: 0; 
+  border-left: 4vh solid transparent;
+  border-right: 4vh solid transparent;
+  border-top: 5vh solid black;
+}
+
+.rainbow-fade1 {
+  animation: rainbowfade1 15s infinite;
+}
+
+.rainbow-fade2 {
+  animation: rainbowfade2 15s infinite;
+}
+
+/* @keyframes rainbowfade1 {
+  0% {background-color: red;}
+  17% {background-color: orange;}
+  33% {background-color: yellow;}
+  50% {background-color: green;}
+  67% {background-color: blue;}
+  84% {background-color: purple;}
+  100% {background-color: red;}
+}
+
+@keyframes rainbowfade2 {
+  0% {border-top: 50px solid red;}
+  17% {border-top: 50px solid orange;}
+  33% {border-top: 50px solid yellow;}
+  50% {border-top: 50px solid green;}
+  67% {border-top: 50px solid blue;}
+  84% {border-top: 50px solid purple;}
+  100% {border-top: 50px solid red;}
+} */
+
+@media only screen and (min-device-height: 1050px) {
+  .red {
+    top: 17vh;
+  }
+  .orange {
+    top: 32vh;
+  }
+  .yellow {
+    top: 18vh;
+  }
+  .green {
+    top: 18vh;
+  }
+  .blue {
+    top: 38vh;
+  }
+  .purple {
+    top: 21vh;
+  }
+
+}
+
+@media only screen and (max-device-width: 600px) {
+  .center-text {
+    width: 70vw;
+  }
+  h1 {
+    font-size: 200px;
+    line-height: 95%;
+  }
+  .personal-info {
+    font-size: 32px;
+  }
+  .balloon {
+    transform: scale(1.1, 1.1);
+  }
+  .red {
+    position: absolute;
+    top: 15vw;
+    left: 10vw;
+  }
+  .orange {
+    position: absolute;
+    top: 80vh;
+    left: 15vw;
+  }
+  .yellow {
+    position: absolute;
+    top: 18vw;
+    left: 45vw;
+  }
+  .green {
+    position: absolute;
+    top: 10vw;
+    right: 10vw;
+  }
+  .blue {
+    position: absolute;
+    top: 75vh;
+    right: 20vw;
+    background-color: blue;
+  }
+  .purple {
+    display: none;
+    position: absolute;
+    top: 38vw;
+    right: 5vw;
+    background-color: purple;
+  }
+
+  .arrow-text {
+    font-size: 2em;
+    position: relative;
+    /* width: 50vw;
+    left: -7vh; */
+    /* left: -40.25vw; */
+  }
+
+  .arrow-container {
+    width: 15vh;
+    bottom: 60px;
+  }
+
+}
+
+
