@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-* {font-family: 'Bebas Neue','Luckiest Guy', cursive;}
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;700&display=swap');
+* {font-family: 'Geologica', sans-serif;}
 body {
     margin: 0px;
     width: 100vw;
@@ -11,14 +12,14 @@ body {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
+    height: 95vh;
 }
 /* h1 {
     text-align: center;
     margin: 5px;
 } */
 p {
-    font-family: 'Rubik', sans-serif;
+  font-family: 'Geologica', sans-serif;
     text-align: center;
     font-size: 17px;
     margin: 5px;
@@ -28,12 +29,14 @@ p {
     /* height: 300px; */
 }
 h1 {
+  font-family: 'Geologica', sans-serif;
   text-align: center;
     margin: 5px;
     /* position: absolute; */
     /* left: 0px; */
     /* background-color: rgb(250, 200, 200); */
-    font-size: 80px;
+    font-size: 90px;
+    line-height: 90%;
     background-image: linear-gradient(90deg, red, orange, rgb(239, 211, 0), green, blue, purple);
     /* text-shadow: 5px 5px 5px black; */
     -webkit-background-clip: text;
@@ -170,7 +173,7 @@ h1 {
 .arrow-container {
   position: absolute;
   bottom: 20px;
-  width: 150px;
+  width: 130px;
   /* height: 250px; */
   /* transform: scale(0.8, 0.8); */
   /* background-color: green; */
@@ -273,7 +276,7 @@ img {
     width: 75vw;
   }
   h1 {
-    font-size: 200px;
+    font-size: 130px;
     line-height: 95%;
   }
   .personal-info {
@@ -317,11 +320,13 @@ img {
   }
 
   .arrow-text {
-    font-size: 2em;
+    /* font-size: 2em; */
     position: relative;
     /* width: 50vw;
     left: -7vh; */
     /* left: -40.25vw; */
+    font-size: 37px;
+    padding-bottom: 30px;
   }
 
   .arrow-container {
@@ -339,10 +344,6 @@ img {
 
   .container {
     height: 90vh;
-}
-
-.arrow-text {
-  padding-bottom: 30px;
 }
 
 }
