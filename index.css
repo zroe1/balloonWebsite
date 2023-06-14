@@ -273,14 +273,14 @@ img {
 
 @media only screen and (max-device-width: 600px) {
   .center-text {
-    width: 75vw;
+    width: 82vw;
   }
   h1 {
-    font-size: 130px;
+    font-size: 140px;
     line-height: 95%;
   }
   .personal-info {
-    font-size: 38px;
+    font-size: 45px;
   }
   .balloon {
     transform: scale(1.1, 1.1);
@@ -325,12 +325,12 @@ img {
     /* width: 50vw;
     left: -7vh; */
     /* left: -40.25vw; */
-    font-size: 37px;
+    font-size: 39px;
     padding-bottom: 30px;
   }
 
   .arrow-container {
-    width: 15vh;
+    width: 17vh;
     bottom: 60px;
   }
 
@@ -343,7 +343,7 @@ img {
   }
 
   .container {
-    height: 90vh;
+    height: 87vh;
 }
 
 }
