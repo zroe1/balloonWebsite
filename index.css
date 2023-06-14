@@ -218,6 +218,14 @@ img {
   animation: rainbowfade2 15s infinite;
 }
 
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: block;
+}
+
 /* @keyframes rainbowfade1 {
   0% {background-color: red;}
   17% {background-color: orange;}
@@ -281,7 +289,7 @@ img {
   }
   .orange {
     position: absolute;
-    top: 80vh;
+    top: 70vh;
     left: 15vw;
   }
   .yellow {
@@ -319,6 +327,14 @@ img {
   .arrow-container {
     width: 15vh;
     bottom: 60px;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
   }
 
 }
