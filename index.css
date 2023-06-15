@@ -60,16 +60,16 @@ body {
 }
 
 .img-container-top {
-  width: 75vw;
-  margin-left: 12.5vw;
+  width: 90vw;
+  margin-left: 5vw;
   display: flex;
 }
 
 .img-container-bottom {
   position: relative;
   bottom: 60px;
-  width: 75vw;
-  margin-left: 12.5vw;
+  width: 90vw;
+  margin-left: 5vw;
   display: flex;
 }
 
@@ -131,6 +131,10 @@ body {
 
 
 .img-balloon-flowers {
+  width: 20vw;
+}
+
+.img-balloon-dress {
   width: 20vw;
 }
 
@@ -518,16 +522,26 @@ img {
   }
 
   .img-balloon-flowers {
-    width: 40vw;
+    width: 55vw;
     /* margin-left: 5vw; */
   }
 
+  .img-balloon-dress {
+    width: 50vw;
+    /* margin-left: 5vw; */
+  }
+
+
+  /* .img-discription {
+    width: 35vw;
+  } */
+
   .img-discription-text {
-    font-size: 25px;
+    font-size: 35px;
   }
 
   .smaller-img-discription-text {
-    font-size: 22px;
+    font-size: 32px;
   }
 
 }
