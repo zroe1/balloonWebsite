@@ -104,7 +104,7 @@ body {
 
   @keyframes slideright {
     0% {
-      margin-left: 100vw;
+      margin-left: 55vw;
     }
     40% {
       margin-left: 35vw;
@@ -116,7 +116,7 @@ body {
 
   @keyframes slideleft {
     0% {
-      margin-left: -80vw;
+      margin-left: 0vw;
     }
     40% {
       margin-left: 20vw;
@@ -127,8 +127,6 @@ body {
   }
 
 }
-
-
 
 .img-balloon-flowers {
   width: 20vw;
@@ -297,8 +295,6 @@ h1 {
     z-index: -1;
   }
 
-
-  
   path {
     fill: none;
     stroke: #000;
@@ -387,26 +383,22 @@ img {
   display: block;
 }
 
-
-/* @keyframes rainbowfade1 {
-  0% {background-color: red;}
-  17% {background-color: orange;}
-  33% {background-color: yellow;}
-  50% {background-color: green;}
-  67% {background-color: blue;}
-  84% {background-color: purple;}
-  100% {background-color: red;}
+.menu-imgs {
+  width: 80vw;
+  margin-left: 10vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-@keyframes rainbowfade2 {
-  0% {border-top: 50px solid red;}
-  17% {border-top: 50px solid orange;}
-  33% {border-top: 50px solid yellow;}
-  50% {border-top: 50px solid green;}
-  67% {border-top: 50px solid blue;}
-  84% {border-top: 50px solid purple;}
-  100% {border-top: 50px solid red;}
-} */
+.menu-img {
+  height: 250px;
+  width:fit-content;
+  box-shadow: 5px 5px 15px #bebebe;
+  margin: 10px;
+}
+
+
 
 @media only screen and (min-device-height: 1050px) {
   .red {
@@ -542,6 +534,21 @@ img {
 
   .smaller-img-discription-text {
     font-size: 32px;
+  }
+
+  .menu-imgs {
+    width: 90vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .menu-img {
+    height: 38vw;
+    width:fit-content;
+    box-shadow: 5px 5px 15px #bebebe;
+    margin: 20px;
   }
 
 }
