@@ -431,10 +431,11 @@ img {
 }
 
 footer {
+  /* border-top: 2px solid black; */
   width: 100vw;
   margin-top: 50px;
   height: 175px;
-  background-color: #f1f0f0;
+  /* background-color: #f1f0f0; */
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
