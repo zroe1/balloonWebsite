@@ -433,7 +433,7 @@ img {
 footer {
   /* border-top: 2px solid black; */
   width: 100vw;
-  margin-top: 50px;
+  margin-top: 40px;
   height: 175px;
   /* background-color: #f1f0f0; */
   display: flex;
@@ -648,7 +648,7 @@ footer {
 
 
   footer {
-    margin-top: 90px;
+    margin-top: 50px;
     height: 375px;
   }
 
